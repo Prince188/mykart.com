@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <title>Order Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    <div class="order-main">
+        <div class="order-bill">
+            <form action="">
+                <div class="form-head">Billing details</div>
+                <div class="name">
+                    <label for="">First & Last Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="name">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+                <div class="name">
+                    <label for="">Mobile</label>
+                    <input type="tel">
+                </div>
+                <div class="name">
+                    <label for="">Pincode</label>
+                    <input type="number">
+                </div>
+                <div class="name">
+                    <label for="">Address</label>
+                    <textarea name="" id="" cols="15" rows="10" style="height: 50px;"></textarea>
+                </div>
+                <br>
+                <div class="form-head">Payment Method</div>
+                <div class="method">
+                    <div class="cod">
+                        <input type="radio" name="pay" id="">COD
+                    </div>
+                    <div class="visa">
+                        <input type="radio" name="pay" id="">VISA
+                    </div>
+                </div>
+                <div class="name">
+                    <label for="card">Enter card number</label>
+                    <input type="number">
+                </div>
+                <div class="ex">
+                    <div class="a">
+                        <label for="card">Expiry number</label>
+                        <input type="number" name="" id="" placeholder="Month">
+                        <input type="number" name="" id="" placeholder="Year">
+                    </div>
+                    <div class="b">
+                        <label for="">Security Code</label>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="name">
+                    <a href=""><button id="place-order">PLACE ORDER</button></a>
+                </div>
+            </form>
+        </div>
+        <div class="order-box">
+
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // Retrieve the category ID from the URL query parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryId = urlParams.get('id');
+            const newPrice = urlParams.get('newprice');
+            console.log(newPrice)
+
+            // To prevent navigation on click on place order
+
+
+            // Fetch the category data using AJAX
+            $.getJSON('ecomm.json', function (data) {
+                // Find the category data based on the category ID
+                const category = data.find(function (item) {
+                    return item.id == categoryId;
+                });
+
+                // Display the category data on the page
+                if (category) {
+                    let item = ''; // Initialize item here
+                    for (var i = 0; i < data.length; i++) {
+                        if (data[i].id == categoryId) {
+                            const priceWithoutCommas = data[i].Price.replace(/,/g, '');
+                            const price = parseInt(priceWithoutCommas);
+                            item += '<div class="order-pic">\
+                        <img src="' + data[i].Image + '" alt="">\
+                    </div>\
+                    <div class="order-name">' +
+                                data[i].Name +
+                                '</div>\
+                    <div class="tit">' +
+                                "Price Detail" +
+                                '</div>\
+                    <div class="order-price-box">\
+                        <table>\
+                            <tr>\
+                                <td>Price</td>\
+                                <td>' + newPrice + '</td>\
+                            </tr>\
+                            <tr>\
+                                <td>Packaging Fee</td>\
+                                <td>99/-</td>\
+                            </tr>\
+                            <tr>\
+                                <td>Delivery Fee</td>\
+                                <td>FREE</td>\
+                            </tr>\
+                            <tr>\
+                                <td>Total Amount</td>\
+                                <td>' + (price + 99) + '</td>\
+                            </tr>\
+                        </table>\
+                    </div>';
+                            // console.log(parseInt(data[i].Price))
+                        }
+                    }
+                    $('.order-box').html(item);
+                }
+            });
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

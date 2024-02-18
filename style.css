@@ -1,0 +1,568 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+body {
+    background-color: #f3f3f4;
+    padding: 0 16px;
+}
+
+
+.navbar {
+    background-color: #fff;
+    height: 60px;
+    color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.webname {
+    font-size: 1.5rem;
+}
+
+#sel {
+    background-color: white;
+    border: 2px solid grey;
+}
+
+.carousel {
+    background-color: rgb(227, 227, 227);
+    box-shadow: 0 0 50px #00000033;
+    /* width: 98%; */
+    margin: 16px auto;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-content {
+    height: 550px;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* CATEGORY */
+
+.category {
+    padding: 0 16px;
+    height: 210px;
+    /* width: 97%; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.category-head {
+    /* background-color: red; */
+    margin: 16px 0;
+    font-weight: bolder;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.category-boxes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.category-box {
+    padding: 3px;
+    border-radius: 8px;
+    /* background-color: rgb(175, 175, 175); */
+    /* border: 1px solid gray; */
+    height: 120px;
+    width: 120px;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0,0.2); */
+    transition: 0.4s;
+}
+
+.category-box:hover {
+    /* background-color: rgb(224, 224, 224);*/
+    transform: scale(1.1);
+}
+
+
+.category-img {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    /* background-color: green; */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.category-img img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.category-name {
+    text-align: center;
+    /* white-space: nowrap; */
+    font-size: 1.1rem;
+    /* font-weight: bold; */
+    /* background-color: green; */
+    line-height: 20px;
+    height: 40px;
+    margin-top: 0px;
+}
+
+/* ================= */
+/* men wear section */
+/* ================= */
+
+.menwear {
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    height: 300px;
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.men-head {
+    /* background-color: yellow; */
+    height: 50px;
+    font-size: 1.8rem;
+    padding: 0 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.men-head a {
+    display: flex;
+    align-items: center;
+}
+
+.men-head button {
+    margin: 0;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgb(175, 175, 175);
+    padding: 3px 6px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.men-head button:hover {
+    border-radius: 30px;
+}
+
+.men-boxes,
+.women-boxes,
+.kids-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: green; */
+    /* height: 250px; */
+    flex: 1 1 auto;
+}
+
+.men-box {
+    height: 200px;
+    width: 250px;
+    border-radius: 8px;
+    /* background-color: grey; */
+    border: 1px solid #e0e0e0;
+    margin: 16px 0;
+}
+
+.men-img {
+    background-color: white;
+    height: 60%;
+    margin: 5px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.men-img img {
+    height: 100%;
+    aspect-ratio: 1;
+    /* border-radius: 3px; */
+    object-fit: contain;
+    /* mix-blend-mode:color-dodge; */
+}
+
+.men-name {
+    padding: 0 8px;
+    /* background-color: blue; */
+    height: 60px;
+}
+
+.non-wear {
+    width: 49%;
+    /* height: 510px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+.others {
+    /* background-color: #fff; */
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-boxes,
+.electronic-boxes,
+.grocery-boxes,
+.home-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.non-wear .men-box {
+    width: 190px;
+    margin: 10px 40px;
+    height: 290px;
+}
+
+.non-wear .men-name {
+    height: 57px;
+    line-height: 19px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.non-wear .men-img {
+    background-color: transparent;
+    height: 200px;
+    width: 180px;
+}
+
+.non-wear img {
+    mix-blend-mode: darken;
+}
+
+/* ==================== */
+/* RESULT.HTML PAGE CSS */
+/* ==================== */
+
+.page-name {
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    height: 55px;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.prod-boxes {
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.prod-box {
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    height: 400px;
+    width: 20%;
+    border-radius: 13px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.prod-img {
+    border-radius: 5px;
+    background-color: white;
+    width: 250px;
+    aspect-ratio: 1;
+    margin: auto;
+}
+
+.prod-img img {
+    height: 250px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.prod-detail {
+    /* background-color: green; */
+    flex: 1;
+    border-radius: 5px;
+}
+
+.prod-name {
+    /* background-color: yellow; */
+    height: 45px;
+    font-size: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+
+.price-order {
+    /* height: 50px; */
+    width: 92%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: space-between; */
+    position: absolute;
+    /* bottom: 0; */
+}
+
+.prod-order .offer{
+    font-size: 2rem;
+}
+
+.offer-per{
+    color: green;
+    font-size: 1.7rem;
+}
+
+s{
+    color: rgb(52, 52, 52);
+    font-size: 1.3rem;
+}
+
+.prod-order button {
+    margin: 0;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgb(175, 175, 175);
+    padding: 2.5px 5px;
+    font-size: 1rem;
+    border-radius: 3px;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    margin-bottom: 16px ;
+}
+
+.prod-order button:hover {
+    border-radius: 30px;
+}
+
+.prod-price {
+    /* background-color: blue; */
+    height: 55px;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    bottom: 0;
+    font-weight: 600;
+}
+
+
+/* ============================================================== */
+/* ORDER PAGE CSS START HERE */
+/* ============================================================== */
+
+.order-main{
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 70%;
+    display: flex;
+    padding: 16px;
+    margin: 16px auto;
+}
+
+.order-bill2{
+    width: 70%;
+}
+
+.order-bill{
+    height: 100%;
+    /* background-color: red;    */
+    width: 50%;
+}
+
+.name{
+    margin: 5px 0;
+}
+
+label{
+    display: block;
+    height: 24px;
+}
+
+input , textarea{
+    height: 24px;
+    padding: 3px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: none;
+}
+
+textarea{
+    height: 50px;
+}
+
+.method{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    /* justify-content: space-evenly; */
+}
+
+.ex{
+    display: flex;
+}
+
+.a input {
+    width: 45%;
+}
+
+.b input{
+    width: 90%;
+}
+
+.name button{
+    background-color: teal;
+    border: 1px solid;
+    height: 45px;
+    width: 90%;
+    font-size: 1.4rem;
+    /* margin-left: 10%; */
+    margin: 16px 5%;
+}
+
+input[type="radio"]{
+    width: 30px;
+    height: 16px;
+}
+
+.form-head{
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+.order-box{
+    /* background-color: green; */
+    width: 50%;
+    /* height: ; */
+}
+
+.order-pic{
+    margin: auto;
+    width: 70%;
+    aspect-ratio: 1;
+    /* background-color: red; */
+}
+
+.order-pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.order-name{
+    margin: 16px 0;
+    width: 100%;
+    line-height: 25px;
+    height: 60px;
+    /* background-color: yellow; */
+}
+
+.tit{
+    font-size: 1.2rem;
+    height: 60px;
+}
+
+.order-price-box{
+    /* background-color: blue; */
+    width: 100%;
+    height: 100px;
+}
+
+table{
+    width: 100%;
+}
+
+table tr td{
+    width: 50%;
+    /* background-color: red; */
+}
+
+table tr td:nth-child(2){
+    text-align: right;
+}
+
+table tr:last-child{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <title>Result Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            <div class="webname">MyKart</div>
+        </a>
+        <select name="" id="sel">
+            <option value="0">All</option>
+            <option value="1">Men</option>
+            <option value="2">Women</option>
+            <option value="3">Kids</option>
+        </select>
+    </div>
+    <!-- Category section -->
+    <!-- <div class="category">
+        <div class="category-head">
+            Explore our categories
+        </div>
+        <div class="category-boxes">
+
+        </div>
+    </div> -->
+    <!-- carousel -->
+    <!-- <div class="carousel">
+        <div class="carousel-content">
+            <div class="carousel-item">
+                <img src="./carousel/199_PC_3000._CB582039078_.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./carousel/3000x1200-heroH1._CB582036967_.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./carousel/Frame_386_3000pc._CB584585056_.jpg" alt="Image 3">
+            </div>
+        </div>
+        <button class="carousel-btn prev-btn">&lt;</button>
+        <button class="carousel-btn next-btn">&gt;</button>
+    </div> -->
+    <div class="page-name">
+
+    </div>
+    <!-- PRODUCT BOX -->
+    <div class="prod-boxes">
+        <!-- <div class="prod-box">
+            <div class="prod-img">
+                <img src="" alt="product">
+            </div>
+            <div class="prod-detail">
+                <div class="prod-name">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, tempora quibusdam. Delectus iure
+                    quibusdam unde.
+                </div>
+                <div class="price-order">
+                    <div class="offer-per">
+                        &darr;
+                    </div>
+                    <div class="prod-price">
+                        1000/-
+                    </div>
+                    <div class="offer">
+                        <s>987897/-</s>
+                    </div>
+                </div>
+                <div class="prod-order">
+                    <a href=""><button>ORDER NOW</button></a>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Retrieve the category ID from the URL query parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryId = urlParams.get('categoryId');
+            const categoryName = urlParams.get('cate');
+            var item = ''
+
+            // Fetch the category data using AJAX
+            $.getJSON('ecomm.json', function (data) {
+
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].id == categoryId) {
+                        var categoryName = data[i].Name; // Assign the name if the condition is met
+                        break; // Exit the loop once the category is found
+                    }
+                }
+                $('.page-name').html(categoryName + " Section");
+                // Filter the data based on the parent_id
+                const categoryData = data.filter(function (item) {
+                    return item.parent_id == categoryId;
+                });
+
+                // Display the category data on the page
+                if (categoryData.length > 0) {
+                    // Iterate through each category and display its details
+                    for (var i = 0; i < data.length; i++) {
+
+                        if (data[i].parent_id == categoryId) {
+                            // logic for discount
+                            var randomNumber = Math.floor(Math.random() * 11) + 1;
+
+                            // Display the random number
+                            console.log("Random number: " + randomNumber);
+                            const priceWithoutCommas = data[i].Price.replace(/,/g, '');
+                            const price = parseInt(priceWithoutCommas);
+                            console.log("P" + price);
+                            const newprice = (price * randomNumber) / (100);
+                            console.log(newprice)
+                            const newPrice = parseInt(price - newprice);
+                            //Discount logic is over
+                            item += '<div class="prod-box">\
+            <div class="prod-img">\
+                <img src="'+ data[i].Image + '" alt="product">\
+            </div>\
+            <div class="prod-detail">\
+                <div class="prod-name">'
+                                + data[i].Name +
+                                '</div>\
+                <div class="price-order">\
+                    <div class="offer-per">'
+                        +"&darr;"+ randomNumber+"%"+
+                    '</div>\
+                    <div class="prod-price">'
+                                + newPrice + "/-" +
+                                '</div>\
+                    <div class="offer">\
+                        <s>'+ data[i].Price + "/-" + '</s>\
+                    </div>\
+                </div>\
+                <div class="prod-order">\
+                        <a href="order.html?id='+ data[i].id + '&newprice='+newPrice+'"><button>ORDER NOW</button></a>\
+                    </div>\
+            </div>\
+        </div>'
+                        }
+                    }
+                } else {
+                    $('.category-details').html('<p>No categories found</p>');
+                }
+                $('.prod-boxes').append(item)
+            });
+        });
+    </script>
+</body>
+
+</html>

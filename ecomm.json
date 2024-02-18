@@ -1,0 +1,501 @@
+[
+    {
+        "id" : 1,
+        "parent_id" : 0,
+        "Image" : "category/malecate.jpg",
+        "Name" : "Men Wear"
+    },
+    {
+        "id" : 2,
+        "parent_id" : 0,
+        "Image" : "category/femalecate.jpg",
+        "Name" : "Women Wear"
+    },
+    {
+        "id" : 3,
+        "parent_id" : 0,
+        "Image" : "category/kids.jpg",
+        "Name" : "Kids Wear"
+    },
+    {
+        "id" : 4,
+        "Name" : "Nike Air Shoes For Men",
+        "Price" : "11,999",
+        "cate" : "shoes",
+        "Image" : "men/air-force-1-07-shoes-8jXZH2.png",
+        "parent_id" : 1
+    },
+    {
+        "id" : 5,
+        "Name" : "Puma One8 Shoes For Men",
+        "cate" : "shoes",
+        "Price" : "3,999",
+        "Image" : "men/shopping.webp",
+        "parent_id" : 1
+    },
+    
+    {
+        "id" : 6,
+        "Name" : "Allen solly men shirt",
+        "cate" : "shirt",
+        "Price" : "1,000",
+        "Image" : "men/shopping (1).webp",
+        "parent_id" : 1
+    },
+    {
+        "id" :7,
+        "Name" : "MEN BLUE SLIM FIT FORMAL FULL SLEEVES FORMAL SHIRT",
+        "cate" : "shirt",
+        "Price" : "1,200",
+        "Image" : "men/916102-11414905.avif",
+        "parent_id" : 1
+    },
+    {
+        "id" : 8,
+        "Name" : "Red Tape Women's Walking Shoes",
+        "cate" : "shoes",
+        "Price" : "1,199",
+        "Image" : "women/shoes1.webp",
+        "parent_id" : 2
+    },
+    {
+        "id":9,
+        "Name" : "Air Jordan 1 Low Women's Shoes",
+        "cate" : "shoes",
+        "Price" : "8,999",
+        "Image" : "women/shoes2.webp",
+        "parent_id" : 2  
+    },
+    {
+        "id" : 10,
+        "Name" : "Women Boxy, Regular Fit Printed Lapel Collar Casual Shirt",
+        "cate" : "shirt",
+        "Price" : "899",
+        "Image" : "women/shirt1.webp",
+        "parent_id" : 2
+    },
+    {
+        "id" : 11,
+        "Name" : "Women Relaxed Fit Fit Self Design Casual Shirt",
+        "cate" : "shirt",
+        "Price" : "999",
+        "Image" : "women/shirt2.webp",
+        "parent_id" : 2
+    },
+    {
+        "id" : 12,
+        "Name" : "Kats Kids Casual Shoes Blue",
+        "cate" : "shoes",
+        "Price" : "799",
+        "Image" : "kids/shoes1.jpeg",
+        "parent_id" : 3
+    },
+    {
+        "id" : 13,
+        "Name" : "School shoes for kids ",
+        "cate" : "shoes",
+        "Price" : "599",
+        "Image" : "kids/shoes2.jpeg" ,
+        "parent_id" : 3
+    },
+    {
+        "id" : 14,
+        "Name" : "U.S. Polo Assn. Kids Boys Brand Striped Dobby Shirt, Blue (24M)",
+        "cate" : "shirt",
+        "Price" : "599",
+        "Image" : "kids/shirt1.jpeg",
+        "parent_id" : 3
+    },
+    {
+        "id" : 15,
+        "Name" : "Buy Coffee Color Shirts for Boys with Half Sleeves T-Shirt 12-18 M / Coffee",
+        "cate" : "shirt",
+        "Price" : "799",
+        "Image" : "kids/shirt2.jpeg",
+        "parent_id" : 3
+    },
+    {
+        "id" : 16,
+        "Name" : "LookMark Men's Cotton Blend Printed Stitched Half Sleeve Shirt",
+        "cate" : "shirt",
+        "Price" : "299",
+        "Image" : "men/51zkKVzqlcL.jpg",
+        "parent_id" : 1
+    },
+    {
+        "id" : 17,
+        "Name" : "Allen Solly Men's Regular Fit Polo",
+        "cate" : "T-shirt",
+        "Price" : "649",
+        "Image" : "men/tshirt1.jpg",
+        "parent_id" : 1
+    },
+    {
+        "id" : 18,
+        "Name" : "EYEBOGLER Men's Striped Regular fit T-Shirt (T285HS_White Darknavy Indigo Royal S) EYEBOGLERMenRegularT-Shirt",
+        "cate" : "T-shirt",
+        "Price" : "250",
+        "Image" : "men/tshirt2.jpg",
+        "parent_id" : 1
+    },
+    {
+        "id" : 19,
+        "Name" : "Pack of 2 Men Typography Round Neck Cotton Blend White, Black T-Shirt",
+        "cate" : "T-shirt",
+        "Price" : "250",
+        "Image" : "men/tshirt3.webp",
+        "parent_id" : 1
+    },
+    {
+        "id" : 20,
+        "Name" : "Sneakers For Men  (Black)",
+        "cate" : "shoes",
+        "Price" : "399",
+        "Image" : "men/shoess.webp",
+        "parent_id" : 1
+    },
+    {
+        "id" : 21,
+        "Name" : "Sneakers For Women  (White)",
+        "cate" : "shoes",
+        "Price" : "259",
+        "Image" : "women/shoes3.webp",
+        "parent_id" : 2
+    },
+    {
+        "id" : 22,
+        "Name" : "Women Boxy, Regular Fit Solid Lapel Collar Casual Shirt",
+        "cate" : "shirt",
+        "Price" : "259",
+        "Image" : "women/shirt3.webp",
+        "parent_id" : 2
+    },
+    {
+        "id" : 23,
+        "Name" : "Typography, Printed Women Round Neck Cotton Blend Purple T-Shirt",
+        "cate" : "T-shirt",
+        "Price" : "269",
+        "Image" : "women/tshirt1.webp",
+        "parent_id" : 2
+    },
+    {
+        "id" : 24,
+        "Name" : "Women Typography, Colorblock Hooded Neck Viscose Rayon Pink T-Shirt",
+        "cate" : "T-shirt",
+        "Price" : "239",
+        "Image" : "women/tshirt2.webp",
+        "parent_id" : 2
+    },
+    {
+        "id" : 25,
+        "Name" :"Women Colorblock Hooded Neck Cotton Blend Maroon, Black T-Shirt",
+        "cate ": "T-shirt",
+        "Price" : "299",
+        "Image" : "women/tshirt3.webp",
+        "parent_id" : 2
+    },
+    {
+        "id" : 26,
+        "Name" : "Velcro Sneakers For Boys & Girls  (Black)",
+        "cate " : "shoes",
+        "Price" : "289",
+        "Image" : "kids/shoes3.webp",
+        "parent_id" : 3
+    },
+    {
+        "id" : 27,
+        "Name" : "Boys Regular Fit Self Design Slim Collar Casual Shirt",
+        "cate" : "shirt" ,
+        "Price" : "499",
+        "Image" : "kids/shirt3.webp",
+        "parent_id" : 3
+    },
+    {
+        "id" : 28,
+        "Name" : "Boys & Girls Printed Cotton Blend T Shirt  (Multicolor, Pack of 2)",
+        "cate" : "T-shirt",
+        "Price" : "449",
+        "Image" : "kids/tshirt1.webp",
+        "parent_id":3
+    },
+    {
+        "id": 29,
+        "Name" : "Girls Graphic Print Pure Cotton T Shirt  (Multicolor, Pack of 5)",
+        "cate" : "T-shirt",
+        "Price" : "399",
+        "Image" : "kids/tshirt2.webp",
+        "parent_id" : 3
+    },
+    {
+        "id":30,
+        "Name" : "Boys & Girls Casual T-shirt Shorts  (Multicolor)",
+        "cate" : "T-shirt",
+        "Price" : "580",
+        "Image" : "kids/tshirt3.webp",
+        "parent_id" : 3
+    },
+    {
+        "id" : 31,
+        "parent_id" : 0,
+        "Image" : "category/electronics.webp",
+        "Name" : "Electronics"
+    },
+    {
+        "id" : 32,
+        "parent_id" : 0,
+        "Image" : "category/home-and-furniture.webp",
+        "Name" : "Home and Furniture"
+    },
+    {
+        "id" : 33,
+        "parent_id" : 0,
+        "Image" : "category/grocery.webp",
+        "Name" : "Grocery"
+    },
+    {
+        "id" : 34,
+        "parent_id" : 0,
+        "Image" : "category/mobile.webp",
+        "Name" : "Mobiles"
+    },
+    {
+        "id":35,
+        "Name" : "SAMSUNG Galaxy F04 (Opal Green, 64 GB)  (4 GB RAM)",
+        "cate" : "mobile",
+        "Price" : "5,999",
+        "Image" : "mobile/mobile1.webp",
+        "parent_id" : 34
+    },
+    {
+        "id":36,
+        "Name" : "Samsung Galaxy S21 FE 5G with Snapdragon 888 (Navy, 128 GB)  (8 GB RAM)",
+        "cate" : "mobile",
+        "Price" : "29,999",
+        "Image" : "mobile/mobile2.webp",
+        "parent_id" : 34
+    },
+    {
+        "id":37,
+        "Name" : "Apple iPhone 14 (Blue, 128 GB)",
+        "cate" : "mobile",
+        "Price" : "57,999",
+        "Image" : "mobile/mobile3.webp",
+        "parent_id" : 34
+    },
+    {
+        "id":38,
+        "Name" : "Apple iPhone 15 Pro Max (Natural Titanium, 256 GB)",
+        "cate" : "mobile",
+        "Price" : "1,48,900",
+        "Image" : "mobile/mobile4.webp",
+        "parent_id" : 34
+    },
+    {
+        "id":39,
+        "Name" : "SAMSUNG Galaxy S24 Ultra 5G (Titanium Gray, 512 GB)  (12 GB RAM)",
+        "cate" : "mobile",
+        "Price" : "1,39,999",
+        "Image" : "mobile/mobile5.webp",
+        "parent_id" : 34
+    },
+    {
+        "id":40,
+        "Name" : "Motorola G34 5G (Ice Blue, 128 GB)  (4 GB RAM)",
+        "cate" : "mobile",
+        "Price" : "10,999",
+        "Image" : "mobile/mobile6.webp",
+        "parent_id" : 34
+    },
+    {
+        "id":41,
+        "Name" : "REDMI Note 13 Pro 5G (Coral Purple, 128 GB)  (8 GB RAM)",
+        "cate" : "mobile",
+        "Price" : "25,999",
+        "Image" : "mobile/mobile7.webp",
+        "parent_id" : 34
+    },
+    {
+        "id":42,
+        "Name" : "Google Pixel 7a (Snow, 128 GB)  (8 GB RAM))",
+        "cate" : "mobile",
+        "Price" : "38,999",
+        "Image" : "mobile/mobile8.webp",
+        "parent_id" : 34
+    },
+    {
+        "id":43,
+        "Name" : "Boult Y1 with Zen ENC Mic, 50H Battery, Fast Charging, Pro+ Calling, Knurled Design Bluetooth Headset  (Black, True Wireless)",
+        "cate" : "electro",
+        "Price" : "999",
+        "Image" : "electro/electro1.webp",
+        "parent_id" : 31
+    },
+    {
+        "id":44,
+        "Name" : "Boult Rcharge with 30Hrs Playtime, ENC mic, Dual Device Pairing, Fast Charging, 5.3v Bluetooth Headset  (Green, Black, In the Ear)",
+        "cate" : "electro",
+        "Price" : "999",
+        "Image" : "electro/electro2.webp",
+        "parent_id" : 31
+    },
+    {
+        "id":45,
+        "Name" : "Fire-Boltt Hurricane 1.3 Curved Glass Display with 360 Health Training, 100+ Sports Modes Smartwatch  (Black Strap, Free Size)",
+        "cate" : "electro",
+        "Price" : "1,299",
+        "Image" : "electro/electro3.webp",
+        "parent_id" : 31
+    },
+    {
+        "id":46,
+        "Name" : "Fire-Boltt Ninja Talk 1.39 Round Bluetooth Calling Smartwatch Metal Body,120 Sports Modes Smartwatch  (Pink Strap, 1.39)",
+        "cate" : "electro",
+        "Price" : "1,599",
+        "Image" : "electro/electro4.webp",
+        "parent_id" : 31
+    },
+    {
+        "id":47,
+        "Name" : "Daikin 2023 Model 1.5 Ton 5 Star Split Inverter AC with PM 2.5 Filter - White  (RKM50UV16U / RKM50UV16V / RKM50UV16VA /MTKM50UV16U/MTKM50UV16V/MTKM50UV16VA, Copper Condenser)",
+        "cate" : "electro",
+        "Price" : "45,490",
+        "Image" : "electro/electro5.webp",
+        "parent_id" : 31
+    },
+    {
+        "id":48,
+        "Name" : "SAMSUNG 8 kg 5 Star, AI Ecobubble,� Wi-Fi, Hygiene Steam,Digital Inverter Fully Automatic Front Load Washing Machine with In-built Heater Black  (WW80T504DAB1TL)",
+        "cate" : "electro",
+        "Price" : "43,190",
+        "Image" : "electro/electro6.webp",
+        "parent_id" : 31
+    },
+    {
+        "id":49,
+        "Name" : "Panasonic 20 L Solo Microwave Oven  (NN-SM25JBFDG, Black)",
+        "cate" : "electro",
+        "Price" : "5,999",
+        "Image" : "electro/electro7.webp",
+        "parent_id" : 31
+    },
+    {
+        "id":50,
+        "Name" : "LG OLED A3 164 cm (65 inch) OLED Ultra HD (4K) Smart WebOS TV a7 AI Processor Gen6, Eye Comfort Display, Magic Remote Control  (OLED65A3PSA)",
+        "cate" : "electro",
+        "Price" : "1,59,999",
+        "Image" : "electro/electro8.webp",
+        "parent_id" : 31
+    },
+    {
+        "id":51,
+        "Name" : "VAS COLLECTIONS 144 TC Microfiber Double Abstract Flat Bedsheet  (Pack of 1, Pink)",
+        "cate" : "home",
+        "Price" : "199",
+        "Image" : "home/h1.webp",
+        "parent_id" : 32
+    },
+    {
+        "id":52,
+        "Name" : "Flipkart SmartBuy 150 cm (5 ft) Polyester Window Curtain (Pack Of 2)  (Floral, Blue)        ",
+        "cate" : "home",
+        "Price" : "299",
+        "Image" : "home/h2.webp",
+        "parent_id" : 32
+    },
+    {
+        "id":53,
+        "Name" : "Chilli Billi L Shaped Sofa Cum Bed 5 Seater Double Foam Fold Out Sofa Cum Bed  (Finish Color - Dark Grey Delivery Condition - Pre-assembled)",
+        "cate" : "home",
+        "Price" : "14,499",
+        "Image" : "home/h3.webp",
+        "parent_id" : 32
+    },
+    {
+        "id":54,
+        "Name" : "GIGLICK 4XL Tear Drop Bean Bag Cover (Without Beans)  (Black)",
+        "cate" : "home",
+        "Price" : "850",
+        "Image" : "home/h4.webp",
+        "parent_id" : 32
+    },
+    {
+        "id":55,
+        "Name" : "LUMINX Wallchiere Wall Lamp With Bulb",
+        "cate" : "home",
+        "Price" : "299",
+        "Image" : "home/h5.webp",
+        "parent_id" : 32
+    },
+    {
+        "id":56,
+        "Name" : "STEELWELL ®™|Sigma Bunk Bed Junior/Adult with Sturdy Guard Rail, Space-Saving ,Noise Free Metal Bunk Bed  (Finish Color - Grey, DIY(Do-It-Yourself))",
+        "cate" : "home",
+        "Price" : "12,599",
+        "Image" : "home/h6.webp",
+        "parent_id" : 32
+    },
+    {
+        "id":57,
+        "Name" : "Demya king of steel DKOSTCREDTABLECHAIR Solid wood Desk Chair  (Finish Color - Multicolor, Pre-assembled)",
+        "cate" : "home",
+        "Price" : "599",
+        "Image" : "home/h7.webp",
+        "parent_id" : 32
+    },
+    {
+        "id":58,
+        "Name" : "AJANTA Analog 30 cm X 30 cm Wall Clock  (Black, Silver, With Glass, Standard)",
+        "cate" : "home",
+        "Price" : "399",
+        "Image" : "home/h8.webp",
+        "parent_id" : 32
+    },
+    {
+        "id" : 59,
+        "Name": "Fortune Soya health refined Soyabean Oil Pouch (Soyabean nu Tel)  (1 L)",
+        "cate" : "grocery",
+        "Price" :"117",
+        "Image" : "grocery/g1.webp",
+        "parent_id" : 33
+    },
+    {
+        "id" : 60,
+        "Name" : "PATANJALI Pure kachi Ghani/Chekku, Sarson Tel Mustard Oil Plastic Bottle (Sarsav nu Tel)  (1 L)0",
+        "cate" : "grocery",
+        "Price" : "130" , 
+        "Image" : "grocery/g2.webp",
+        "parent_id" : 33
+    },
+    {
+        "id" : 61,
+        "Name" : "Flipkart SmartBuy Anti Bacterial Soap (Cleansing Sabu)  (6 x 100 g)",
+        "cate" : "grocery",
+        "Price" : "100" , 
+        "Image" : "grocery/g4.webp",
+        "parent_id" : 33
+    },
+    {
+        "id" : 62,
+        "Name" : "UNIBIC Choco Kiss filled Cookies (Cookie)  (250 g)",
+        "cate" : "grocery",
+        "Price" : "70", 
+        "Image" : "grocery/g3.webp",
+        "parent_id" : 33
+    },
+    {
+        "id" : 63,
+        "Name" : "Amul Pasteurised Salted Butter  (500 g)",
+        "cate" : "grocery",
+        "Price" : "280", 
+        "Image" : "grocery/g6.webp",
+        "parent_id" : 33
+    },
+    {
+        "id" : 64,
+        "Name" : "Ariel Top Load Matic Fresh Liquid Detergent  (3.2 L)",
+        "cate" : "grocery",
+        "Price" : "520", 
+        "Image" : "grocery/g5.webp",
+        "parent_id" : 33
+    }
+]

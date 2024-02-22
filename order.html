@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="mobile.css">
 </head>
 
-<body> 
+<body>
     <div class="order-main">
         <div class="order-bill">
             <form action="">
@@ -40,17 +40,17 @@
                 <div class="form-head">Payment Method</div>
                 <div class="method">
                     <div class="cod">
-                        <input type="radio" name="pay" id="">COD
+                        <input type="radio" name="pay" id="" checked>COD
                     </div>
                     <div class="visa">
-                        <input type="radio" name="pay" id="">VISA
+                        <input type="radio" name="pay" id="visa">VISA
                     </div>
                 </div>
-                <div class="name">
+                <div class="name" id="card">
                     <label for="card">Enter card number</label>
-                    <input type="number">
+                    <input type="number" id="cd">
                 </div>
-                <div class="ex">
+                <div class="ex" id="card-info">
                     <div class="a">
                         <label for="card">Expiry number</label>
                         <input type="number" name="" id="" placeholder="Month">
@@ -61,10 +61,15 @@
                         <input type="number">
                     </div>
                 </div>
-                <div class="name">
-                    <a href=""><button id="place-order">PLACE ORDER</button></a>
+                <div class="name" id="btn">
+                    <button id="place-order">PLACE ORDER</button>
                 </div>
             </form>
+        </div>
+        <div class="linebk">
+            <br>
+            <hr>
+            <br>
         </div>
         <div class="order-box">
 
@@ -130,6 +135,58 @@
                     $('.order-box').html(item);
                 }
             });
+
+            $('#btn').click(function (event) {
+                event.preventDefault();
+                // Your other code here
+                console.log("Button clicked!");
+            })
+
+            $('input[type="radio"]').click(function () {
+                var card = $(this).parent().text().trim();
+                console.log(card)
+                if (card === 'VISA') {
+                    $('#card').css({
+                        'transition': '0.4s',
+                        'height': '55.7px',
+                        'overflow': 'hidden'
+                    })
+                    $('#card-info').css({
+                        'transition': '0.4s',
+                        'height': '55.7px',
+                        'overflow': 'hidden'
+                    })
+                    $('#cd').css({
+                        'height': '24px',
+                        'padding': '3px',
+                        'width': '90%',
+                        'border': '1px solid black',
+                        'border- radius': '3px',
+                        'outline': 'none'
+                    })
+                }
+                else if (card === 'COD') {
+                    console.log('COD................')
+                    $('#card').css({
+                        'transition': '0.4s',
+                        'height': '0px',
+                        'overflow': 'hidden'
+                    })
+                    $('#card-info').css({
+                        'transition': '0.4s',
+                        'height': '0px',
+                        'overflow': 'hidden'
+                    })
+                    $('#cd').css({
+                        'height': '24px',
+                        'padding': '3px',
+                        'width': '90%',
+                        'border': '1px solid black',
+                        'border- radius': '3px',
+                        'outline': 'none'
+                    })
+                }
+            })
         });
 
 
